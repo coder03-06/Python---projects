@@ -83,3 +83,28 @@ greeting()
 def student_info(name, age, city):
     print(name, age, city)
 student_info(age=20, name="John", city="Bangalore")
+
+
+#Classes and Objects
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+class Employee(Person):
+    def __init__(self, name, age, designation):
+        super().__init__(name, age)
+        self.designation = designation
+
+    def display(self):
+            print("Name:", self.name)
+            print("Age:", self.age)
+            print("Designation:", self.designation)
+
+e1 = Employee("John", 25 , "Developer")
+e2 = Employee("Ann" , 27 , "Software Tester")
+e1.display()
+e2.display()
+
+
+
+    
