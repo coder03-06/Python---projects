@@ -1,0 +1,612 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Battina Roy | Portfolio</title>
+
+    <meta name="description"
+          content="Battina Roy - Computer Science Engineering Student and Developer">
+
+    <link rel="stylesheet"
+          href="{% static 'css/style.css' %}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<header class="header">
+    <div class="container navbar-container">
+
+        <a href="#home" class="logo">BR<span>.</span></a>
+
+        <nav class="navbar" id="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#contact" class="contact-nav">Contact</a>
+        </nav>
+
+        <button class="theme-btn" id="themeBtn"
+                aria-label="Toggle dark mode">☾</button>
+
+        <button class="menu-btn" id="menuBtn"
+                aria-label="Toggle menu" aria-expanded="false">☰</button>
+
+    </div>
+</header>
+
+
+<main>
+
+<!-- HOME SECTION -->
+
+<section class="hero" id="home">
+
+    <div class="container hero-container">
+
+        <div class="hero-content">
+
+            <p class="eyebrow">HELLO, WELCOME TO MY PORTFOLIO</p>
+
+            <h1>
+                Hi, I'm <span>Battina Roy</span>
+            </h1>
+
+            <h2>
+                Computer Science & Engineering Student
+            </h2>
+
+            <p class="hero-description">
+                I am passionate about software development,
+                artificial intelligence and emerging technologies.
+
+                I enjoy transforming innovative ideas into
+                meaningful digital solutions.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn primary-btn">
+                    Explore My Work →
+                </a>
+
+                <a href="#contact" class="btn secondary-btn">
+                    Contact Me
+                </a>
+
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/coder03-06"
+                   target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+
+                <a href="https://www.linkedin.com/in/battina-roy-652089271"
+                   target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+
+                <a href="mailto:battinaroy@gmail.com">Email ↗</a>
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <!-- Replace profile.jpg with your own photo -->
+
+            <img src="{% static 'images/profile.jpeg' %}"
+                 alt="Battina Roy - Profile Photograph"
+                 class="profile-photo">
+
+            <div class="photo-caption">
+                <span>✦</span> Building. Learning. Growing.
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT SECTION -->
+
+<section class="section about-section" id="about">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <p>GET TO KNOW ME</p>
+            <h2>About <span>Me</span></h2>
+        </div>
+
+        <div class="about-grid">
+
+            <div class="about-text">
+
+                <h3>A curious mind with a passion for technology.</h3>
+
+                <p>
+                    I am a Computer Science and Engineering student
+                    at Gopalan College of Engineering and Management,
+                    Bengaluru.
+                </p>
+
+                <p>
+                    I have a foundation in programming,
+                    object-oriented programming, data structures
+                    and algorithms, and software development.
+                </p>
+
+                <p>
+                    I enjoy building applications across web,
+                    artificial intelligence and emerging technology
+                    domains. Participating in hackathons and
+                    technical competitions motivates me to
+                    continuously learn and innovate.
+                </p>
+
+                <p>
+                    My goal is to develop my technical abilities
+                    and contribute to meaningful real-world
+                    software solutions.
+                </p>
+
+            </div>
+
+            <div class="about-cards">
+
+                <div class="mini-card">
+                    <h3>01</h3>
+                    <h4>Problem Solving</h4>
+                    <p>Logical thinking and algorithmic skills.</p>
+                </div>
+
+                <div class="mini-card">
+                    <h3>02</h3>
+                    <h4>Innovation</h4>
+                    <p>Exploring AI and emerging technologies.</p>
+                </div>
+
+                <div class="mini-card">
+                    <h3>03</h3>
+                    <h4>Collaboration</h4>
+                    <p>Learning and growing through teamwork.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SKILLS SECTION -->
+
+<section class="section skills-section" id="skills">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <p>MY TECHNICAL TOOLKIT</p>
+            <h2>My <span>Skills</span></h2>
+        </div>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <span>01</span>
+                <h3>Programming</h3>
+                <p>Python</p>
+                <p>Java</p>
+            </div>
+
+            <div class="skill-card">
+                <span>02</span>
+                <h3>Web Technologies</h3>
+                <p>HTML</p>
+                <p>CSS</p>
+            </div>
+
+            <div class="skill-card">
+                <span>03</span>
+                <h3>Database</h3>
+                <p>MySQL</p>
+            </div>
+
+            <div class="skill-card">
+                <span>04</span>
+                <h3>Development Tools</h3>
+                <p>Git</p>
+            </div>
+
+            <div class="skill-card">
+                <span>05</span>
+                <h3>Core Concepts</h3>
+                <p>Data Structures & Algorithms</p>
+                <p>Object-Oriented Programming</p>
+            </div>
+
+            <div class="skill-card">
+                <span>06</span>
+                <h3>Analytical Skills</h3>
+                <p>Problem Solving</p>
+                <p>Debugging</p>
+                <p>Code Optimization</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROJECTS SECTION -->
+
+<section class="section projects-section" id="projects">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <p>WHAT I HAVE BUILT</p>
+            <h2>My <span>Projects</span></h2>
+            <p>Ideas transformed into meaningful applications.</p>
+        </div>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="ai">AI & Emerging Tech</button>
+            <button class="filter-btn" data-filter="web">Web & Software</button>
+        </div>
+
+        <div class="projects-grid">
+
+            <article class="project-card" data-category="ai">
+
+                <span class="project-number">PROJECT 01</span>
+
+                <h3>EcoGrid.AI</h3>
+
+                <h4>Quantum-Optimized Renewable Energy Distribution</h4>
+
+                <p>
+                    Developed a smart-grid analytics dashboard
+                    applying Quantum Approximate Optimization
+                    Algorithms (QAOA) through PennyLane to optimize
+                    renewable energy distribution across urban zones.
+                </p>
+
+                <div class="tags">
+                    <span>QAOA</span>
+                    <span>PennyLane</span>
+                    <span>Weather APIs</span>
+                </div>
+
+            </article>
+
+
+            <article class="project-card" data-category="ai">
+
+                <span class="project-number">PROJECT 02</span>
+
+                <h3>Absorba</h3>
+
+                <h4>AI-Powered Personalized Learning System</h4>
+
+                <p>
+                    Developed an adaptive learning platform
+                    personalizing educational content according
+                    to learner performance, pace and learning style,
+                    with automated quiz generation.
+                </p>
+
+                <div class="tags">
+                    <span>Machine Learning</span>
+                    <span>AI</span>
+                    <span>Adaptive Learning</span>
+                </div>
+
+                <div class="award">🏆 3rd Place - GCEM Hacks 4.0</div>
+
+            </article>
+
+
+            <article class="project-card" data-category="web">
+
+                <span class="project-number">PROJECT 03</span>
+
+                <h3>Learning Management System</h3>
+
+                <h4>Django-Based Web Application</h4>
+
+                <p>
+                    Built a learning platform with secure
+                    authentication, role-based access,
+                    course creation, student enrollment and
+                    resource management.
+                </p>
+
+                <div class="tags">
+                    <span>Django</span>
+                    <span>Python</span>
+                    <span>Web Development</span>
+                </div>
+
+            </article>
+
+
+            <article class="project-card" data-category="web">
+
+                <span class="project-number">PROJECT 04</span>
+
+                <h3>Hospital Management System</h3>
+
+                <h4>Database-Driven Application</h4>
+
+                <p>
+                    Designed an application for patient records,
+                    doctor schedules, appointment booking and
+                    hospital administration workflows.
+                </p>
+
+                <div class="tags">
+                    <span>SQL</span>
+                    <span>Database Design</span>
+                    <span>Data Management</span>
+                </div>
+
+                <div class="award">🏆 1st Place - Mini Project Competition</div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- EDUCATION SECTION -->
+
+<section class="section education-section" id="education">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <p>MY ACADEMIC JOURNEY</p>
+            <h2>My <span>Education</span></h2>
+        </div>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <span>2024 - 2028</span>
+                <h3>Bachelor of Engineering</h3>
+                <h4>Computer Science & Engineering</h4>
+                <p>
+                    Gopalan College of Engineering and Management,
+                    Bengaluru.
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <span>2024 | 82%</span>
+                <h3>Class XII - State Board</h3>
+                <p>
+                    Jyoti Nivas Pre-University College, Bengaluru.
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <span>2022 | 87%</span>
+                <h3>Class X - ICSE</h3>
+                <p>Carmel Convent School.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ACHIEVEMENTS AND CERTIFICATIONS -->
+
+<section class="section achievements-section" id="achievements">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <p>RECOGNITION & LEARNING</p>
+            <h2>Achievements & <span>Certifications</span></h2>
+        </div>
+
+        <div class="recognition-grid">
+
+            <div class="recognition-card">
+
+                <h3>Achievements</h3>
+
+                <div class="recognition-item">
+                    <span>🏆</span>
+                    <div>
+                        <h4>1st Place - Mini Project Competition</h4>
+                        <p>
+                            Hospital Management System,
+                            College Mini Project Expo.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="recognition-item">
+                    <span>🥉</span>
+                    <div>
+                        <h4>3rd Place - GCEM Hacks 4.0</h4>
+                        <p>
+                            Absorba - AI Personalized Learning System.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="recognition-card">
+
+                <h3>Certifications</h3>
+
+                <div class="recognition-item">
+                    <span>📜</span>
+                    <div>
+                        <h4>Java Programming Fundamentals</h4>
+                        <p>Coursera - 2025</p>
+                    </div>
+                </div>
+
+                <div class="recognition-item">
+                    <span>📜</span>
+                    <div>
+                        <h4>Data Structures and Algorithms: The Complete Masterclass</h4>
+                        <p>Coursera - 2025</p>
+                    </div>
+                </div>
+
+                <div class="recognition-item">
+                    <span>📜</span>
+                    <div>
+                        <h4>Vibeathon Participation Certificate</h4>
+                        <p>GCEM - 2026</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT SECTION -->
+
+<section class="section contact-section" id="contact">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <p>LET'S CONNECT</p>
+            <h2>Get In <span>Touch</span></h2>
+            <p>
+                Have an opportunity or project idea?
+                I would love to hear from you.
+            </p>
+        </div>
+
+        <div class="contact-grid">
+
+            <div class="contact-info">
+
+                <div>
+                    <span>Email</span>
+                    <a href="mailto:battinaroy@gmail.com">
+                        battinaroy@gmail.com
+                    </a>
+                </div>
+
+                <div>
+                    <span>GitHub</span>
+                    <a href="https://github.com/coder03-06"
+                       target="_blank" rel="noopener noreferrer">
+                        View GitHub Profile ↗
+                    </a>
+                </div>
+
+                <div>
+                    <span>LinkedIn</span>
+                    <a href="https://www.linkedin.com/in/battina-roy-652089271"
+                       target="_blank" rel="noopener noreferrer">
+                        Connect on LinkedIn ↗
+                    </a>
+                </div>
+
+                <div>
+                    <span>Location</span>
+                    <p>Bengaluru, Karnataka, India</p>
+                </div>
+
+                <div>
+                    <span>Languages</span>
+                    <p>English · Hindi · Malayalam</p>
+                </div>
+
+            </div>
+
+            <form class="contact-form" id="contactForm">
+
+                <label for="name">Your Name</label>
+                <input type="text" id="name"
+                       placeholder="Enter your name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email"
+                       placeholder="Enter your email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" rows="5"
+                          placeholder="Write your message..."
+                          required></textarea>
+
+                <button type="submit" class="btn primary-btn">
+                    Prepare Email →
+                </button>
+
+                <p id="formMessage"></p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <h3>Battina Roy<span>.</span></h3>
+
+        <p>Designed with curiosity. Built with passion.</p>
+
+        <p>© <span id="year"></span> Battina Roy. All Rights Reserved.</p>
+
+        <a href="#home">Back to top ↑</a>
+
+    </div>
+
+</footer>
+
+
+<script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>
