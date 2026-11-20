@@ -1,0 +1,188 @@
+
+/* ---------- GLOBAL ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f7f8fc;
+    color: #20243a;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ---------- NAVIGATION ---------- */
+
+nav {
+    background: #ffffff;
+    color: #20243a;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav h2 {
+    font-size: 25px;
+    font-weight: 800;
+    color: #263b80;
+}
+
+nav a {
+    margin-left: 25px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #536dfe;
+}
+
+.cart-badge {
+    background: #536dfe;
+    color: white;
+    padding: 3px 9px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+/* ---------- MAIN CONTAINER ---------- */
+
+.container {
+    max-width: 1200px;
+    margin: 45px auto;
+    padding: 0 25px;
+}
+
+.container h1 {
+    font-size: 34px;
+    margin-bottom: 30px;
+    color: #20243a;
+}
+
+/* ---------- PRODUCT GRID ---------- */
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 28px;
+}
+
+/* ---------- PRODUCT CARDS ---------- */
+
+.product-card {
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 16px;
+    border: 1px solid #edf0f7;
+    box-shadow: 0 5px 20px rgba(30, 45, 90, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 30px rgba(30, 45, 90, 0.12);
+}
+
+.product-card h2 {
+    font-size: 21px;
+    margin-bottom: 12px;
+    color: #20243a;
+}
+
+.product-card p {
+    color: #747b91;
+    margin-bottom: 12px;
+}
+
+.price {
+    color: #263b80 !important;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+/* ---------- BUTTONS ---------- */
+
+button {
+    background: #536dfe;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #3548c5;
+    transform: translateY(-2px);
+}
+
+/* ---------- CART ---------- */
+
+.product-card form {
+    margin-top: 12px;
+}
+
+input[type="number"] {
+    padding: 11px;
+    border: 1px solid #dce1ed;
+    border-radius: 8px;
+    width: 90px;
+    margin-right: 8px;
+    outline: none;
+}
+
+input[type="number"]:focus {
+    border-color: #536dfe;
+}
+
+.container > h2 {
+    margin-top: 30px;
+    color: #263b80;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 600px) {
+    nav {
+        padding: 15px 5%;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    nav h2 {
+        font-size: 21px;
+    }
+
+    nav a {
+        margin-left: 12px;
+    }
+
+    .container {
+        margin: 30px auto;
+        padding: 0 16px;
+    }
+
+    .container h1 {
+        font-size: 27px;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+}
